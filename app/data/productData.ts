@@ -1,5 +1,8 @@
+import { v4 as uuidv4 } from 'uuid';
+
 export const offers = [
     {
+        id: uuidv4(),
         title: 'Toyota Corolla 2015',
         category: 'Motoryzacja',
         price: '28 500 zł',
@@ -8,6 +11,7 @@ export const offers = [
         published: new Date('2024-05-28'),
     },
     {
+        id: uuidv4(),
         title: 'Mieszkanie 45m² Warszawa',
         category: 'Nieruchomości',
         price: '599 000 zł',
@@ -16,6 +20,7 @@ export const offers = [
         published: new Date('2024-06-01'),
     },
     {
+        id: uuidv4(),
         title: 'Rower trekkingowy Kross',
         category: 'Sport i Hobby',
         price: '1 200 zł',
@@ -24,6 +29,7 @@ export const offers = [
         published: new Date('2024-05-30'),
     },
     {
+        id: uuidv4(),
         title: 'iPhone 13 Pro Max 256GB',
         price: 4200,
         category: 'Elektronika',
@@ -32,6 +38,7 @@ export const offers = [
         published: new Date('2024-05-20'),
     },
     {
+        id: uuidv4(),
         title: 'Nowa kuchnia Ikea - zestaw',
         price: 7500,
         category: 'Dom i Ogród',
@@ -40,6 +47,7 @@ export const offers = [
         published: new Date('2024-06-02'),
     },
     {
+        id: uuidv4(),
         title: 'Zestaw wędkarski Shimano',
         price: 850,
         category: 'Sport i Hobby',
@@ -48,6 +56,7 @@ export const offers = [
         published: new Date('2024-05-29'),
     },
     {
+        id: uuidv4(),
         title: 'Laptop Dell XPS 13',
         price: 5200,
         category: 'Elektronika',
@@ -56,6 +65,7 @@ export const offers = [
         published: new Date('2024-05-27'),
     },
     {
+        id: uuidv4(),
         title: 'Zegarek Garmin Fenix 6',
         price: 1600,
         category: 'Moda',
@@ -64,6 +74,7 @@ export const offers = [
         published: new Date('2024-05-26'),
     },
     {
+        id: uuidv4(),
         title: 'BMW 3 E90 2008 2.0D',
         price: 23900,
         category: 'Motoryzacja',
@@ -72,6 +83,7 @@ export const offers = [
         published: new Date('2024-05-22'),
     },
     {
+        id: uuidv4(),
         title: 'Dom 120m² z działką, Toruń',
         price: 749000,
         category: 'Nieruchomości',
