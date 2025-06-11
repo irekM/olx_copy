@@ -7,21 +7,28 @@ Prosty klon strony głównej OLX zbudowany przy użyciu Next.js 15, Tailwind CSS
 ## Instalacja
 
 1. Sklonuj repozytorium:
-   ```bash
-   git clone https://github.com/twoj-login/olx_copy.git
-   cd olx_copy
+
+    ```bash
+    git clone https://github.com/twoj-login/olx_copy.git
+    cd olx_copy
+
+    ```
 
 2. Zainstaluj zależności
    npm install
 
 3. Uruchom projekt w trybie developerskim
-   ```bash
-   npm run dev
+
+    ```bash
+    npm run dev
+
+    ```
 
 4. Otwóz w przeglądarce:
    http://localhost:3000
-   
+
 ### Technologie
+
 Next.js 15
 
 React 19
