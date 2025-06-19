@@ -1,23 +1,21 @@
-// lib/firebase.ts
-import { initializeApp, getApps, getApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore';
-import { getAuth } from 'firebase/auth';
+// Import the functions you need from the SDKs you need
+import { initializeApp } from 'firebase/app';
+import { getAnalytics } from 'firebase/analytics';
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-// configuration from Firebase Console
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: 'AIzaSyBmyBrwpDkq95Mp8dSn_jC2JH3h3NZoh9Y',
-    authDomain: 'olx-copy-ccb9f.firebaseapp.com',
-    projectId: 'olx-copy-ccb9f',
-    storageBucket: 'olx-copy-ccb9f.firebasestorage.app',
-    messagingSenderId: '562918629200',
-    appId: '1:562918629200:web:e4438032e2ad873a115655',
-    measurementId: 'G-51BMJP48Z7',
+    apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+    authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+    measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-// // anti-pattern: avoid using `initializeApp` multiple times
-// const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
-
-export const db = getFirestore(app);
-export const auth = getAuth(app);
+const analytics = getAnalytics(app);
