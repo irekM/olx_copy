@@ -34,5 +34,5 @@ Thumbs.db
 .env.local
 
 # Next.js files
-.next
+.next/
 
