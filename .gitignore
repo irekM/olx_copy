@@ -5,7 +5,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Environment variables
-.env
+.env*
 
 # Logs
 logs/
@@ -32,3 +32,8 @@ Thumbs.db
 
 # Firebase environment variables
 .env.local
+
+# Next.js build output
+.next/
+# Next.js cache
+.next/cache/
