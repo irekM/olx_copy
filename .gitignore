@@ -29,13 +29,37 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
-
-# env files (can opt-in for committing if needed)
+# Environment variables
 .env*
-
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+# Logs
+logs/
+*.log
+*.tlog
+*.trace
+
+# Build output
+dist/
+build/
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Git files
+.git/
+.gitignore
+
+# Firebase environment variables
+.env.local
+
