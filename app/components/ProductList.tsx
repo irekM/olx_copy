@@ -1,3 +1,4 @@
+
 import { offers } from '../data/productData';
 
 export default function ProductList() {
