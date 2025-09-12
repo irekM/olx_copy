@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { db } from '../../firebase/firebase'; // <-- tu importujesz swoją konfigurację
+// Import Firestore database configuration
+import { db } from '../../firebase/firebase';
 import { collection, addDoc } from 'firebase/firestore';
 
 export default function AddOfferPage() {
@@ -23,7 +24,7 @@ export default function AddOfferPage() {
                 location,
                 published: new Date(),
             });
-            alert('Ogłoszenie dodane 🎉');
+            console.log('Ogłoszenie dodane 🎉');
             setTitle('');
             setPrice('');
             setCategory('');
